@@ -1,7 +1,10 @@
 class A:
-    def method1(self):
+    def store_to_s3(self, fp):
+        
         print("sai Test")
+    
+        
 
 a = A()
-a.method1()
+a.method1("filepath")
 
