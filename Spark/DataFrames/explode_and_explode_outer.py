@@ -24,12 +24,6 @@ df2.show()
 
 
 
-
-
-
-
-
-
 print("=============Explode Outer===============")
 
 df.select(df.name,explode_outer(df.knownLanguages)).show()

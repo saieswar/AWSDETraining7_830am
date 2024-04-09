@@ -1,0 +1,7 @@
+Row ID	Order ID	Order Date	Ship Date	Ship Mode	Customer ID	Customer Name	Segment	Country	City	State	Postal Code	Region	Product ID	Category	Sub-Category	Product Name	Sales	Quantity	Discount	Profit
+6190	CA-2017-157903	4/4/2017	4/8/2017	Standard Class	AM-10705	Anne McFarland	Consumer	United States	Des Plaines	Illinois	60016	Central	TEC-PH-10004345	Technology	Phones	Cisco SPA 502G IP Phone	383.84	4	0.2	47.98
+6366	CA-2017-144848	4/4/2017	4/5/2017	First Class	DS-13030	Darrin Sayre	Home Office	United States	New York City	New York	10009	East	TEC-PH-10004006	Technology	Phones	Panasonic KX - TS880B Telephone	41.22	1	0	11.1294
+6367	CA-2017-144848	4/4/2017	4/5/2017	First Class	DS-13030	Darrin Sayre	Home Office	United States	New York City	New York	10009	East	OFF-SU-10000646	Office Supplies	Supplies	Premier Automatic Letter Opener	240.37	1	0	7.2111
+6368	CA-2017-144848	4/4/2017	4/5/2017	First Class	DS-13030	Darrin Sayre	Home Office	United States	New York City	New York	10009	East	TEC-PH-10002262	Technology	Phones	LG Electronics Tone+ HBS-730 Bluetooth Headset	119.02	2	0	33.3256
+6922	CA-2017-109211	4/4/2017	4/10/2017	Standard Class	PS-19045	Penelope Sewall	Home Office	United States	New York City	New York	10011	East	OFF-EN-10001532	Office Supplies	Envelopes	Brown Kraft Recycled Envelopes	16.98	1	0	8.49
+9691	CA-2017-140536	4/4/2017	4/5/2017	First Class	TA-21385	Tom Ashbrook	Home Office	United States	New York City	New York	10035	East	OFF-AR-10001545	Office Supplies	Art	Newell 326	7.04	4	0	2.0416
