@@ -18,8 +18,12 @@ df2.show()
 
 df3=df2.groupBy(df2.Month, df2.Year).agg(sum(df2.ItemValue).alias("TotalSale"))
 df3.show()
+
+
 df4 = df3.select("*", lag(df3.TotalSale).over(Window.orderBy(df3.Month, df3.Year)).alias("PrevSales") )
 df4.show()
+
+
 df4.printSchema()
 df_final = df4.select('*',((df4.TotalSale-df4.PrevSales)*100/df4.TotalSale).alias("Percentage"))
 df_final.show()
