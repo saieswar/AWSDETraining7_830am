@@ -1,0 +1,40 @@
+import streamlit as st
+import ollama
+
+# Streamlit page settings
+st.set_page_config(page_title="SAS to SQL Chatbot", layout="wide")
+st.title("💬 SAS → SQL Conversion Chatbot (Llama 3.1 / Ollama)")
+
+# Initialize chat history
+if "messages" not in st.session_state:
+    st.session_state["messages"] = []
+
+# Display previous chat
+for msg in st.session_state["messages"]:
+    with st.chat_message(msg["role"]):
+        st.write(msg["content"])
+
+# Chat input
+prompt = st.chat_input("Paste SAS code or ask something...")
+
+# Function that calls Ollama with fixed model name
+def query_ollama(prompt):
+    response = ollama.generate(
+        model="llama3.1",   # <-- MODEL NAME FIXED HERE
+        prompt=prompt
+    )
+    return response["response"]
+
+# When user enters a prompt
+if prompt:
+    # Save user message
+    st.session_state["messages"].append({"role": "user", "content": prompt})
+
+    # Generate assistant response
+    with st.chat_message("assistant"):
+        with st.spinner("Converting..."):
+            output = query_ollama(prompt)
+            st.write(output)
+
+    # Save assistant reply
+    st.session_state["messages"].append({"role": "assistant", "content": output})
